@@ -32,9 +32,9 @@
 /// @param type The BTUIKPaymentOptionType of the selected payment method
 /// @param nonce The BTPaymentMethodNonce of the selected payment method. @note This can be `nil` in the case of Apple Pay.
 /// @param error The error that occured during tokenization of a new payment method.
-/// @param recentCard Boolean value to specify if the user selected a recent card.
+/// @param recentItem Boolean value to specify if the user selected a recent item.
 
-- (void) selectionCompletedWithPaymentMethodType:(BTUIKPaymentOptionType) type nonce:(BTPaymentMethodNonce *)nonce isRecentCard:(BOOL)recentCard error:(NSError *)error;
+- (void) selectionCompletedWithPaymentMethodType:(BTUIKPaymentOptionType) type nonce:(BTPaymentMethodNonce *)nonce isRecentItem:(BOOL)recentItem error:(NSError *)error;
 
 
 /// Called on the delegate when the value return by BTPaymentSelectionViewController:sheetHeight has changed
